@@ -1,0 +1,64 @@
+package org.college;
+
+public class College {
+	public void collegeName()
+	{
+		System.out.println("College Name: Govt. Engineering College,Thrissur");
+	}
+	public void collegeCode()
+	{
+		System.out.println("College code: GECTCR");
+	}
+	public void collegeRank()
+	{
+		System.out.println("Collage rank: 1");
+	}
+
+}
+
+
+-------------------------------------------------------------------------------------------
+package org.department;
+
+import org.college.College;
+
+public class Department extends College{
+	public void deptName()
+	{
+		System.out.println("Department: Computer Science");
+	}
+}
+
+-------------------------------------------------------------------------------------------
+package org.student;
+
+import org.department.Department;
+
+public class Student extends Department {
+	public void studentName()
+	{
+		System.out.println("Student Name: Rose");
+	}
+	
+	public void studentDep() {
+		System.out.println("Student dept: Computer Science");
+	}
+	public void StudentId()
+	{
+		System.out.println("Student id: 123456");
+	}
+	public static void main(String[] args) {
+Student obj=new Student();
+		
+		obj.collegeName();
+		obj.collegeCode();
+		obj.collegeRank();
+		obj.deptName();
+		obj.StudentId();
+		obj.studentName();
+		obj.studentDep();
+
+	}
+
+}
+
