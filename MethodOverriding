@@ -1,0 +1,38 @@
+package week3.assignments;
+
+public class BankInfo {
+	public void saving()
+	{
+		System.out.println("My saving account");
+	}
+	public void fixed()
+	{
+		System.out.println("My fixed account");
+	}
+	public void deposit()
+	{
+		System.out.println("My deposit account");
+	}
+	
+}
+
+-----------------------------------------------------------------
+
+package week3.assignments;
+
+public class AxisBank extends BankInfo {
+	
+	public void deposit() {
+
+		System.out.println("Axis bank deposit account");
+		}
+
+	public static void main(String[] args) {
+		AxisBank axis = new AxisBank();
+
+		axis.deposit();
+
+
+	}
+
+}
