@@ -1,0 +1,12 @@
+
+Single level inheritance:
+
+RemoteWebDriver------->ChromiumDriver
+     
+Multilevel Inheritance 
+ChromiumDriver------------>EdgeDriver 
+  .
+  .
+  .
+  .
+  ChromeDriver 
